@@ -1,0 +1,21 @@
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item + .item {
+    margin-left: 40px;
+}
+
+.name {
+    font-size: 22px;
+    text-align: center;
+}
+
+.avatar {
+    align-self: center;
+}
+
+.status {
+    font-size: 12px;
+}
