@@ -1,6 +1,7 @@
 .item {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .item + .item {
@@ -13,9 +14,26 @@
 }
 
 .avatar {
-    align-self: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
 }
 
 .status {
-    font-size: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.statusOnline {
+    background-color: green;
 }
